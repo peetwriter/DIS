@@ -1,0 +1,21 @@
+.central-image {
+  display: block;
+  padding: 50px;
+}	
+
+.icon-next {
+	color: black;
+}
+
+.carousel-inner h3{
+	color: green;
+}
+
+
+.carousel-inner h2{
+	color: black;
+}
+
+.page-header h1{
+	color: blue;
+}
