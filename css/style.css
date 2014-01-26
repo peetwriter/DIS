@@ -19,3 +19,27 @@
 .page-header h1{
 	color: blue;
 }
+
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+
+.carousel-control .icon-prev, 
+.carousel-control .icon-next {
+    font-size: 100px;
+    margin-top: -70px;
+    color: black;
+}
+
+.carousel-indicators{
+	bottom: 0px;
+}
+
+.btn-lg {
+	line-height: 2.5;
+}
