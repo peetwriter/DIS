@@ -41,5 +41,19 @@
 }
 
 .btn-lg {
-	line-height: 2.5;
+	line-height: 2.5;	
+}
+
+.btn-warning{
+  float: right;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+
+.hlpBtnn
+{
+  color: red;
+  float: right;
+  margin-top: 20px;
+  margin-right: 100px;
 }
