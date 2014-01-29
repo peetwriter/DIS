@@ -9,11 +9,11 @@
   </head>
 
   <body>
-    <div class="page-header">
+    
       <div class="container text-center ">
-      <h1><a href="index.html">Last 5 products/garmants that you touched</a></h1>
+      <h1><a href="index.html">Last 5 products that you touched</a></h1>
       </div>
-    </div>
+    
 
     <div id="carousel-example-generic" class="carousel slide">
       <!-- Indicators -->
@@ -30,20 +30,24 @@
         <div class="item active center-block carousel-img">
           <img src="img/1.png" style="margin: auto;">          
           <div class="carousel-caption">
-          <h3>Available in stock</h3>
-          <button type="button" class="btn btn-success btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-            Click and assistant will help you!
-          </button>
+          
+            <h3>Available in stock</h3>
+            <button type="button" class="btn btn-success btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onclick="getMyszie()">
+              GET MY SIZE!
+            </button>
+          
           </div>
         </div>
         <div class="item center-block carousel-img">
-          <img src="img/2.png" style="margin: auto;"> 
+          <img src="img/2.png" style="margin: auto;">          
           <div class="carousel-caption">
-          <h3>Available in stock</h3>
-          <button type="button" class="btn btn-success btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-            Click and assistant will help you!
-          </button>
-          </div>         
+            
+              <h3>Available in stock</h3>
+              <button type="button" class="btn btn-success btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onclick="getMyszie()">
+                GET MY SIZE!
+              </button>
+            
+           </div>
         </div>
         <div class="item center-block carousel-img">
           <img src="img/3.png" style="margin: auto;"> 
@@ -55,8 +59,8 @@
           <img src="img/4.png" style="margin: auto;">  
           <div class="carousel-caption">
           <h3>Available in stock</h3>
-          <button type="button" class="btn btn-success btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-            Click and assistant will help you!
+          <button type="button" class="btn btn-success btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onclick="getMyszie()">
+            GET MY SIZE!
           </button>
           </div>        
         </div>
@@ -84,7 +88,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">
-           <h1>A customer assistant is on you way with the product of your size.</br>
+           <h1>A customer assistant is on your way with the product of your size.</br>
             Thank you for your patience!</h1>
 
           </div>
@@ -95,9 +99,25 @@
       </div><!-- /.modal-dialog -->
     </div>
 
-
+    <div class="hlpBtnn">
+    <button type="button" class="btn btn-warning center-block" onclick="helpButton()">
+      <h5>For any other help or queries click here</h5>
+    </button> 
+  </div>
    
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+    function getMyszie()
+    {
+      var customerInfoBlock = $(".carousel-caption");
+      customerInfoBlock.html("<h3>Customer assistant will be with you shortly</h3>");
+    }
+    function helpButton()
+    {
+      var helpblock =  $(".hlpBtnn");
+      helpblock.html("<h3>Nearest customer assistant is on your way</h3>");
+    }
+    </script>
   </body>
 </html>
