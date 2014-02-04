@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Shopping ring</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,7 +11,7 @@
   <body>
     
       <div class="container text-center ">
-      <h1><a href="index.html">Last 5 products that you touched</a></h1>
+      <h1><a href="index.html">Last 5 products that you couldn't find your size</a></h1>
       </div>
     
 
@@ -29,10 +29,10 @@
       <div class="carousel-inner">
         <div class="item active center-block carousel-img">
           <img src="img/1.png" style="margin: auto;">          
-          <div class="carousel-caption">
+          <div class="carousel-caption thing1">
           
             <h3>Available in stock</h3>
-            <button type="button" class="btn btn-success btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onclick="getMyszie()">
+            <button type="button" class="btn btn-success btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onclick="getMyszie(1)">
               GET MY SIZE!
             </button>
           
@@ -40,10 +40,10 @@
         </div>
         <div class="item center-block carousel-img">
           <img src="img/2.png" style="margin: auto;">          
-          <div class="carousel-caption">
+          <div class="carousel-caption thing2">
             
               <h3>Available in stock</h3>
-              <button type="button" class="btn btn-success btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onclick="getMyszie()">
+              <button type="button" class="btn btn-success btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onclick="getMyszie(2)">
                 GET MY SIZE!
               </button>
             
@@ -57,11 +57,13 @@
         </div>
         <div class="item center-block carousel-img">
           <img src="img/4.png" style="margin: auto;">  
-          <div class="carousel-caption">
-          <h3>Available in stock</h3>
-          <button type="button" class="btn btn-success btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onclick="getMyszie()">
-            GET MY SIZE!
-          </button>
+          <div class="carousel-caption thing4">
+
+            <h3>Available in stock</h3>
+            <button type="button" class="btn btn-success btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onclick="getMyszie(4)">
+              GET MY SIZE!
+            </button>
+
           </div>        
         </div>
         <div class="item center-block carousel-img">
@@ -108,9 +110,10 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-    function getMyszie()
+    function getMyszie(thingNum)
     {
-      var customerInfoBlock = $(".carousel-caption");
+      var block = ".thing" + thingNum;
+      var customerInfoBlock = $(block);
       customerInfoBlock.html("<h3>Customer assistant will be with you shortly</h3>");
     }
     function helpButton()
