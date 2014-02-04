@@ -73,21 +73,13 @@ h1 strong {
 	line-height: 2.5;	
 }
 
-.btn-danger h5{
-  float: right;
-  margin-top: 20px;
-  margin-right: 100px;
-  width: 350px;
-  font-size: 18pt;
-  text-align: center;
-}
-
 .hlpBtnn
 {
-  color: red;
-  float: right;
+  width: 600px;
+  font-size: 25pt;
+  text-align: center;
   margin-top: 20px;
-  margin-right: 100px;
+
 }
 
 .finger-image {
@@ -115,7 +107,9 @@ h1 strong {
 }
 
 .btn-lg {
-	line-height: 2.5;	
+	line-height: 2;
+  width: 200px;
+  font-size: 18pt;	
 }
 
 .btn-warning{
@@ -124,10 +118,3 @@ h1 strong {
   margin-right: 100px;
 }
 
-.hlpBtnn
-{
-  color: red;
-  float: right;
-  margin-top: 20px;
-  margin-right: 100px;
-}
